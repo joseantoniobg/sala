@@ -1,9 +1,18 @@
+html {
+  background-image: radial-gradient(#ccc, rgb(53, 53, 53));
+}
+
 html,
 body {
   padding: 0;
-  margin: 0;
+  margin: 4rem auto;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  width: 280rem;
+}
+
+html {
+  font-size: 35.875%;
 }
 
 a {
@@ -12,5 +21,7 @@ a {
 }
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }

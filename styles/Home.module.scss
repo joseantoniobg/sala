@@ -1,0 +1,92 @@
+.sala {
+  display: grid;
+  //grid-template-columns: repeat(6, minmax());
+  //grid-template-rows: repeat(30, minmax(15rem, maxcontent));
+}
+
+.body {
+  border: 3rem solid black;
+  background-color: rgb(245, 245, 245);
+  position: relative;
+  box-shadow: 20px 20px 15px rgba(#000, 0.5);
+}
+
+.title {
+  background-color: red;
+  margin: 4rem;
+  clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 0 100%, 10% 50%);
+  transform: skewY(30deg) translate(30rem, -10rem);
+}
+
+.back_title {
+  text-align: center;
+  font-family: "Caveat";
+  font-size: 6rem;
+  padding: 4rem;
+  width: 90%;
+  margin: 3rem auto;
+  color: #fff;
+  transform: translateY(-2rem);
+}
+
+.buttons {
+  right: 20px;
+  bottom: 20px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  // transform: translateX(-50%);
+}
+
+.btn {
+  font-size: 60px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: none;
+  color: #fff;
+  transition: all 0.2s;
+  background-color: rgb(55, 52, 236);
+  margin: 10px;
+  &:hover {
+    transform: scale(1.2);
+    box-shadow: 5px 5px 10px rgba(#000, 0.2);
+    background-color: darken(rgb(55, 52, 236), 10%);
+  }
+  &:active {
+    transform: scale(1.2) translatey(10px);
+    box-shadow: 5px 5px 10px rgba(#000, 0.2);
+  }
+
+  @media only screen and (max-width: 90em) {
+    width: 130px;
+    height: 130px;
+    font-size: 100px;
+    margin: 20px;
+  }
+
+  @media only screen and (max-width: 70em) {
+    width: 200px;
+    height: 200px;
+    font-size: 150px;
+    margin: 40px;
+  }
+}
+
+.reuniao {
+  background-color: #fcd66d;
+  flex: 1;
+  border-radius: 0 0 3rem 0;
+  font-size: 6rem;
+  text-align: center;
+  //font-size: 35.875%;
+  position: relative;
+}
+
+.titulo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
